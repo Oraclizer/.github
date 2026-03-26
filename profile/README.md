@@ -15,7 +15,7 @@
 
 Oraclizer is an oracle state machine that achieves **bidirectional state synchronization** between on-chain and off-chain systems. Unlike traditional oracles that relay discrete data points, Oraclizer synchronizes the *complete state* of tokenized assets across heterogeneous domains with cryptographic guarantees.
 
-### Core Components
+### Core Components 
 
 | Component | Description | Status |
 |---|---|---|
@@ -23,6 +23,7 @@ Oraclizer is an oracle state machine that achieves **bidirectional state synchro
 | **OIP** | Oracle Interoperability Protocol — protocol specification for state mapping | In design |
 | **RCP** | Regulatory Compliance Protocol — 31 requirements from 15 global regulators | [EIP Draft](https://research.oraclizer.io/category/eip/) |
 | **ERC-TRUST** | Total Regulatory Unified Security Token standard | In design |
+| **OracleMint** | RWA tokenization platform (DAML-based) | In design |
 | **Formal Verification** | Isabelle/HOL proofs for cross-domain state preservation | [Repository](https://github.com/Oraclizer/formal-verification) |
 
 ### Research
