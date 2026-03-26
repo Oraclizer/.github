@@ -1,9 +1,6 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_white.png" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_black.png" />
-    <img src="https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_white.png" alt="Oraclizer" width="280" />
-  </picture>
+  <img src="https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_white.png#gh-dark-mode-only" alt="Oraclizer" width="280" />
+  <img src="https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_black.png#gh-light-mode-only" alt="Oraclizer" width="280" />
 </p>
 
 <p align="center">
