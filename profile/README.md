@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="https://oraclizer.io/wp-content/uploads/2025/12/oraclizer_logo_white.png" alt="Oraclizer" width="280" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="profile/oraclizer_logo.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="profile/oraclizer_logo_black.svg" />
+    <img src="profile/oraclizer_logo.svg" alt="Oraclizer" width="280" />
+  </picture>
 </p>
 
 <p align="center">
