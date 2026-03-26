@@ -1,7 +1,9 @@
 <div align="center">
-
-![Oraclizer](https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_white.png#gh-dark-mode-only)
-![Oraclizer](https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_black.png#gh-light-mode-only)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_white.png?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_black.png?v=2">
+  <img alt="Oraclizer" src="https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_black.png?v=2" width="280">
+</picture>
 
 **The first oracle state machine for regulatory-compliant state synchronization**
 
