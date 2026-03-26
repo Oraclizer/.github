@@ -1,18 +1,13 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_white.png#gh-dark-mode-only" alt="Oraclizer" width="280" />
-  <img src="https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_black.png#gh-light-mode-only" alt="Oraclizer" width="280" />
-</p>
+<div align="center">
 
-<p align="center">
-  <strong>The first oracle state machine for regulatory-compliant state synchronization</strong>
-</p>
+![Oraclizer](https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_white.png#gh-dark-mode-only)
+![Oraclizer](https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_black.png#gh-light-mode-only)
 
-<p align="center">
-  <a href="https://oraclizer.io">Website</a> · 
-  <a href="https://research.oraclizer.io">Research</a> · 
-  <a href="https://docs.oraclizer.io">Documentation</a> · 
-  <a href="https://x.com/Oraclizer">𝕏</a>
-</p>
+**The first oracle state machine for regulatory-compliant state synchronization**
+
+[Website](https://oraclizer.io) · [Research](https://research.oraclizer.io) · [Documentation](https://docs.oraclizer.io) · [𝕏](https://x.com/Oraclizer)
+
+</div>
 
 ---
 
