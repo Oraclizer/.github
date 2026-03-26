@@ -1,8 +1,8 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="profile/oraclizer_logo.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="profile/oraclizer_logo_black.svg" />
-    <img src="profile/oraclizer_logo.svg" alt="Oraclizer" width="280" />
+    <source media="(prefers-color-scheme: dark)" srcset="profile/oraclizer_logo_white.png" />
+    <source media="(prefers-color-scheme: light)" srcset="profile/oraclizer_logo_black.png" />
+    <img src="profile/oraclizer_logo_white.png" alt="Oraclizer" width="280" />
   </picture>
 </p>
 
