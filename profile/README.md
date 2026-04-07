@@ -7,6 +7,9 @@
 
 **The first oracle state machine for regulatory-compliant state synchronization**
 
+[![RCP Paper](https://img.shields.io/badge/arXiv-2603.29278-b31b1b.svg)](https://arxiv.org/abs/2603.29278)
+[![CDSP Paper](https://img.shields.io/badge/arXiv-2604.03844-b31b1b.svg)](https://arxiv.org/abs/2604.03844)
+
 [Website](https://oraclizer.io) · [Research](https://research.oraclizer.io) · [Documentation](https://docs.oraclizer.io) · [𝕏](https://x.com/Oraclizer)
 
 </div>
