@@ -1,4 +1,5 @@
 <div align="center">
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_white.png?v=2">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_black.png?v=2">
@@ -6,9 +7,6 @@
 </picture>
 
 **The first oracle state machine for regulatory-compliant state synchronization**
-
-[![RCP Paper](https://img.shields.io/badge/arXiv-2603.29278-b31b1b.svg)](https://arxiv.org/abs/2603.29278)
-[![CDSP Paper](https://img.shields.io/badge/arXiv-2604.03844-b31b1b.svg)](https://arxiv.org/abs/2604.03844)
 
 [Website](https://oraclizer.io) · [Research](https://research.oraclizer.io) · [Documentation](https://docs.oraclizer.io) · [𝕏](https://x.com/Oraclizer)
 
@@ -18,7 +16,7 @@
 
 Oraclizer is an oracle state machine that achieves **bidirectional state synchronization** between on-chain and off-chain systems. Unlike traditional oracles that relay discrete data points, Oraclizer synchronizes the *complete state* of tokenized assets across heterogeneous domains with cryptographic guarantees.
 
-### Core Components 
+### Core Components
 
 | Component | Description | Status |
 |---|---|---|
@@ -32,6 +30,12 @@ Oraclizer is an oracle state machine that achieves **bidirectional state synchro
 ### Research
 
 Our research blog at [research.oraclizer.io](https://research.oraclizer.io) covers the theoretical foundations, protocol design, formal verification journey, and economic modeling behind state synchronization.
+
+**Published papers:**
+
+[![RCP Paper](https://img.shields.io/badge/arXiv-2603.29278-b31b1b.svg)](https://arxiv.org/abs/2603.29278) **Regulatory Compliance Protocol (RCP)** — A framework of 31 requirements synthesized from 15 global financial regulators, proposing a new EIP standard for tokenized capital markets.
+
+[![CDSP Paper](https://img.shields.io/badge/arXiv-2604.03844-b31b1b.svg)](https://arxiv.org/abs/2604.03844) **Cross-Domain State Preservation (CDSP)** — A mechanized proof in Isabelle/HOL establishing safety and liveness of cross-domain state preservation under Byzantine faults.
 
 ### Contact
 
