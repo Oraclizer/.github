@@ -27,9 +27,9 @@ Oraclizer is an oracle state machine that achieves **bidirectional state synchro
 | **OracleMint** | RWA tokenization platform (DAML-based) | In design |
 | **Formal Verification** | Isabelle/HOL proofs for cross-domain state preservation | [Repository](https://github.com/Oraclizer/formal-verification) |
 
-### Research
+## Research
 
-Our research blog at [research.oraclizer.io](https://research.oraclizer.io) covers the theoretical foundations, protocol design, formal verification journey, and economic modeling behind state synchronization.
+Our research publications at [research.oraclizer.io](https://research.oraclizer.io) cover the theoretical foundations, protocol design, formal verification, and economic modeling behind state synchronization.
 
 **Published papers:**
 
