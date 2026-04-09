@@ -33,7 +33,7 @@ Our research publications at [research.oraclizer.io](https://research.oraclizer.
 
 **Published papers:**
 
-[![RCP Paper](https://img.shields.io/badge/arXiv-2603.29278-b31b1b.svg)](https://arxiv.org/abs/2603.29278) **Regulatory Compliance Protocol (RCP)** — A framework of 31 requirements synthesized from 15 global financial regulators, proposing a new EIP standard for tokenized capital markets.
+[![RCP Paper](https://img.shields.io/badge/arXiv-2603.29278-b31b1b.svg)](https://arxiv.org/abs/2603.29278) [![RCP SSRN](https://img.shields.io/badge/SSRN-6538718-006837.svg)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6538718) **Regulatory Compliance Protocol (RCP)** - A framework of 31 requirements synthesized from 15 global financial regulators, proposing a new EIP standard for tokenized capital markets.
 
 [![CDSP Paper](https://img.shields.io/badge/arXiv-2604.03844-b31b1b.svg)](https://arxiv.org/abs/2604.03844) **Cross-Domain State Preservation (CDSP)** — A mechanized proof in Isabelle/HOL establishing safety and liveness of cross-domain state preservation under Byzantine faults.
 
