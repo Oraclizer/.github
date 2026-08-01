@@ -1,0 +1,94 @@
+<svg width="720" height="1080" viewBox="0 0 720 1080" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Oraclizer system and research map for narrow screens</title>
+  <desc id="desc">A vertically arranged project map showing source systems, the OIP and OSS target architecture, regulatory semantics, and assurance work with current publication and maturity labels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="720" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="1" stop-color="#0A1728"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(360 330) rotate(90) scale(430 410)">
+      <stop stop-color="#2473FF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#2473FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" stroke="#6E8AAC" stroke-opacity="0.08"/>
+    </pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M1 1L8 5L1 9" stroke="#5B93FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="720" height="1080" rx="26" fill="url(#bg)"/>
+  <rect width="720" height="1080" rx="26" fill="url(#grid)"/>
+  <rect width="720" height="1080" rx="26" fill="url(#glow)"/>
+  <rect x="0.75" y="0.75" width="718.5" height="1078.5" rx="25.25" stroke="#315072" stroke-opacity="0.7" stroke-width="1.5"/>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="40" y="50" fill="#6FA0FF" font-size="13" font-weight="700" letter-spacing="2.2">ORACLIZER SYSTEM MAP</text>
+    <text x="40" y="84" fill="#F4F8FF" font-size="24" font-weight="700">Protocol, semantics, and assurance</text>
+    <text x="40" y="111" fill="#9EB1C8" font-size="14">Current publication and maturity boundaries</text>
+
+    <rect x="40" y="144" width="300" height="112" rx="16" fill="#0D1B2D" stroke="#294866"/>
+    <circle cx="66" cy="172" r="6" fill="#5B93FF"/>
+    <text x="84" y="179" fill="#F4F8FF" font-size="17" font-weight="700">OFF-CHAIN SYSTEMS</text>
+    <text x="66" y="210" fill="#AFC0D4" font-size="14">Financial, identity, and</text>
+    <text x="66" y="231" fill="#AFC0D4" font-size="14">regulated state</text>
+
+    <rect x="380" y="144" width="300" height="112" rx="16" fill="#0D1B2D" stroke="#294866"/>
+    <circle cx="406" cy="172" r="6" fill="#5B93FF"/>
+    <text x="424" y="179" fill="#F4F8FF" font-size="17" font-weight="700">ON-CHAIN SYSTEMS</text>
+    <text x="406" y="210" fill="#AFC0D4" font-size="14">Token, contract, and</text>
+    <text x="406" y="231" fill="#AFC0D4" font-size="14">settlement state</text>
+
+    <path d="M190 256V284H360" stroke="#5B93FF" stroke-width="2"/>
+    <path d="M530 256V284H360" stroke="#5B93FF" stroke-width="2"/>
+    <path d="M360 284V310" stroke="#5B93FF" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="40" y="310" width="640" height="178" rx="20" fill="#10233A" stroke="#4D7FC7" stroke-width="1.5"/>
+    <text x="72" y="348" fill="#6FA0FF" font-size="13" font-weight="700" letter-spacing="1.7">TARGET ARCHITECTURE</text>
+    <text x="72" y="382" fill="#FFFFFF" font-size="24" font-weight="700">ORACLE STATE MACHINE</text>
+    <text x="72" y="411" fill="#B7C9DD" font-size="15">Protocol-level coordination of state transitions</text>
+    <rect x="72" y="431" width="168" height="30" rx="15" fill="#193A64"/>
+    <text x="156" y="451" text-anchor="middle" fill="#AFCBFF" font-size="12" font-weight="700">OIP v0.5 · PUBLISHED</text>
+    <rect x="252" y="431" width="188" height="30" rx="15" fill="#2C2449"/>
+    <text x="346" y="451" text-anchor="middle" fill="#D8CAFF" font-size="12" font-weight="700">OSS · IN DEVELOPMENT</text>
+    <text x="468" y="451" fill="#72A2FF" font-size="13" font-weight="600">BIND → VERIFY → COMMIT</text>
+
+    <path d="M360 514V488" stroke="#5B93FF" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="40" y="514" width="640" height="218" rx="20" fill="#0D1B2D" stroke="#294866"/>
+    <text x="72" y="552" fill="#F4F8FF" font-size="21" font-weight="700">REGULATORY SEMANTICS</text>
+    <text x="72" y="579" fill="#8EA6C0" font-size="14">Shared meaning, state transitions, and execution boundaries</text>
+    <rect x="72" y="601" width="576" height="50" rx="12" fill="#12263E"/>
+    <text x="94" y="624" fill="#FFFFFF" font-size="16" font-weight="700">RCP / ERC-8319</text>
+    <text x="94" y="643" fill="#AFC0D4" font-size="12">Public proposal · open and under editor review</text>
+    <rect x="524" y="614" width="102" height="24" rx="12" fill="#173D35"/>
+    <text x="575" y="631" text-anchor="middle" fill="#6BE0B6" font-size="11" font-weight="700">PUBLIC</text>
+    <rect x="72" y="663" width="576" height="50" rx="12" fill="#12263E"/>
+    <text x="94" y="686" fill="#FFFFFF" font-size="16" font-weight="700">ERC-TRUST</text>
+    <text x="94" y="705" fill="#AFC0D4" font-size="12">Private pre-ERC candidate · public release planned</text>
+    <rect x="516" y="676" width="110" height="24" rx="12" fill="#4A3617"/>
+    <text x="571" y="693" text-anchor="middle" fill="#FFD27A" font-size="11" font-weight="700">PRIVATE</text>
+
+    <path d="M360 758V732" stroke="#5B93FF" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="40" y="758" width="640" height="218" rx="20" fill="#0D1B2D" stroke="#294866"/>
+    <text x="72" y="796" fill="#F4F8FF" font-size="21" font-weight="700">ASSURANCE</text>
+    <text x="72" y="823" fill="#8EA6C0" font-size="14">Machine-checked models and proving infrastructure</text>
+    <rect x="72" y="845" width="576" height="50" rx="12" fill="#12263E"/>
+    <text x="94" y="868" fill="#FFFFFF" font-size="16" font-weight="700">formal-verification</text>
+    <text x="94" y="887" fill="#AFC0D4" font-size="12">Production-maintained, model-level research artifacts</text>
+    <rect x="524" y="858" width="102" height="24" rx="12" fill="#173D35"/>
+    <text x="575" y="875" text-anchor="middle" fill="#6BE0B6" font-size="11" font-weight="700">PUBLIC</text>
+    <rect x="72" y="907" width="576" height="50" rx="12" fill="#12263E"/>
+    <text x="94" y="930" fill="#FFFFFF" font-size="16" font-weight="700">StateSync-GKR</text>
+    <text x="94" y="949" fill="#AFC0D4" font-size="12">Private prover stack · release after readiness gates</text>
+    <rect x="516" y="920" width="110" height="24" rx="12" fill="#4A3617"/>
+    <text x="571" y="937" text-anchor="middle" fill="#FFD27A" font-size="11" font-weight="700">PRIVATE</text>
+
+    <rect x="40" y="1000" width="640" height="54" rx="14" fill="#0A1626" stroke="#243F5B"/>
+    <circle cx="64" cy="1027" r="5" fill="#6FA0FF"/>
+    <text x="82" y="1022" fill="#D9E5F3" font-size="12" font-weight="700">ASSURANCE BOUNDARY</text>
+    <text x="82" y="1042" fill="#8FA5BE" font-size="11">Project map, not a deployment diagram. No audit, legal, deployment, or refinement claim.</text>
+  </g>
+</svg>
