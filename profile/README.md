@@ -1,42 +1,136 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_white.png?v=2">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_black.png?v=2">
-  <img alt="Oraclizer" src="https://raw.githubusercontent.com/Oraclizer/.github/main/profile/oraclizer_logo_black.png?v=2" width="280">
+  <source media="(prefers-color-scheme: dark)" srcset="./oraclizer_logo.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./oraclizer_logo_black.svg">
+  <img alt="Oraclizer" src="./oraclizer_logo_black.svg" width="320">
 </picture>
 
-**The first oracle state machine for regulatory-compliant state synchronization**
+### Formal, protocol, and proving foundations for cross-domain state synchronization
 
-[Website](https://oraclizer.io) · [Research](https://research.oraclizer.io) · [Documentation](https://docs.oraclizer.io) · [𝕏](https://x.com/Oraclizer)
+Oraclizer is building an oracle state machine that coordinates on-chain and
+off-chain state transitions under explicit protocol, verification, and
+regulatory boundaries.
+
+[**Website**](https://oraclizer.io) ·
+[**Research**](https://research.oraclizer.io) ·
+[**Documentation**](https://docs.oraclizer.io) ·
+[**Formal artifacts**](https://github.com/Oraclizer/formal-verification) ·
+[**X**](https://x.com/Oraclizer)
+
+[System map](#system-and-research-map) ·
+[Repositories](#repository-portfolio) ·
+[Standards](#protocols-and-standards) ·
+[Publications](#published-research) ·
+[Review](#review-and-contact)
 
 </div>
 
----
+> [!IMPORTANT]
+> Oraclizer's public GitHub currently provides research, formal artifacts, and
+> protocol specifications. A public repository, a green proof build, or a
+> published preprint does not by itself establish a production deployment, an
+> audit, legal compliance, operational security, or model-to-code refinement.
+> Each repository defines its exact assurance boundary.
 
-Oraclizer is an oracle state machine that achieves **bidirectional state synchronization** between on-chain and off-chain systems. Unlike traditional oracles that relay discrete data points, Oraclizer synchronizes the *complete state* of tokenized assets across heterogeneous domains with cryptographic guarantees.
+## Why state synchronization
 
-### Core Components
+Observation-oriented oracle designs move facts into a chain. Stateful assets
+also require coordinated changes to ownership, restrictions, contractual
+terms, and external records. Independent updates can leave participating
+domains with different views of the same asset.
 
-| Component | Description | Status |
-|---|---|---|
-| **OSS** | Oracle State Synchronizer — cross-chain state synchronization engine | In design |
-| **OIP** | Oracle Interoperability Protocol — protocol specification for state mapping | In design |
-| **RCP** | Regulatory Compliance Protocol — 31 requirements from 15 global regulators | [EIP Draft](https://research.oraclizer.io/category/eip/) |
-| **ERC-TRUST** | Total Regulatory Unified Security Token standard | In design |
-| **OracleMint** | RWA tokenization platform (DAML-based) | In design |
-| **Formal Verification** | Isabelle/HOL proofs for cross-domain state preservation | [Repository](https://github.com/Oraclizer/formal-verification) |
+Oraclizer treats this as a state-machine problem. The target architecture
+defines the required coupling between domains, binds related transitions,
+verifies the transition against explicit rules, and records a result that can
+be inspected and challenged. The work spans protocol specification, regulatory
+semantics, mechanized models, and proving infrastructure.
 
-## Research
+## System and research map
 
-Our research publications at [research.oraclizer.io](https://research.oraclizer.io) cover the theoretical foundations, protocol design, formal verification, and economic modeling behind state synchronization.
+<p align="center">
+  <picture>
+    <source media="(max-width: 640px)" srcset="./assets/oraclizer-system-map-mobile.svg">
+    <img src="./assets/oraclizer-system-map.svg" alt="Oraclizer system and research map showing on-chain and off-chain systems connected through the OIP and OSS target architecture, with regulatory semantics and assurance layers" width="100%">
+  </picture>
+</p>
 
-**Published papers:**
+The diagram is a project map, not a deployment diagram. Its status labels are
+part of the architecture: public research, published specifications, active
+development, and private candidates are intentionally distinguished.
 
-[![RCP Paper](https://img.shields.io/badge/arXiv-2603.29278-b31b1b.svg)](https://arxiv.org/abs/2603.29278) [![RCP SSRN](https://img.shields.io/badge/SSRN-6538718-006837.svg)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6538718) **Regulatory Compliance Protocol (RCP)** - A framework of 31 requirements synthesized from 15 global financial regulators, proposing a new EIP standard for tokenized capital markets.
+## Repository portfolio
 
-[![CDSP Paper](https://img.shields.io/badge/arXiv-2604.03844-b31b1b.svg)](https://arxiv.org/abs/2604.03844) [![CDSP SSRN](https://img.shields.io/badge/SSRN-6550359-006837.svg)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6550359) **Cross-Domain State Preservation (CDSP)** - A mechanized proof in Isabelle/HOL establishing safety and liveness of cross-domain state preservation under Byzantine faults.
+### Public now
 
-### Contact
+| Repository | Scope | Current status |
+| --- | --- | --- |
+| [**formal-verification**](https://github.com/Oraclizer/formal-verification) | Machine-checked, model-level foundations for cross-domain state preservation and regulatory action composition in Isabelle/HOL | **Public, production-maintained research.** Reproducible sessions, integrity manifests, explicit assumptions, security reporting, contribution rules, governance, and citation metadata. It is not a production implementation or deployment. |
 
-📧 jay@oraclizer.io
+### Preparing for public release
+
+The repositories below remain private today. These entries announce intended
+future publication. They do not announce availability, a delivery date, audit
+status, or production readiness, and no private repository link is exposed.
+
+| Repository | Scope | Publication boundary |
+| --- | --- | --- |
+| **ERC-TRUST** | *Typed Regulatory Uniformity for Security Tokens*: typed, fail-closed regulatory actions and recomputable receipts for security-token implementations | **Private pre-ERC candidate.** Public release is planned after repository-readiness and disclosure gates. Unaudited and not for production. No release date is announced. |
+| **StateSync-GKR** | A GKR prover stack specialized for sparse-Merkle-tree state verification and built on Plonky3 primitives | **Private development repository.** Public release is planned after evidence, repository hygiene, and security gates. No release date is announced. |
+
+Public visibility will be evaluated independently from a version tag, release,
+deployment, audit, or standards-process milestone.
+
+## Protocols and standards
+
+| Work | Role | Public state |
+| --- | --- | --- |
+| [**OIP v0.5**](https://docs.oraclizer.io/oip-v05/oip-overview/) | Oracle Interoperability Protocol: message semantics, state transitions, routing, validation, errors, and conformance rules for state-machine implementations | **Published specification, prototype stage.** OIP is a specification; OSS is its reference implementation track. |
+| [**RCP**](https://arxiv.org/abs/2603.29278) | Regulatory Compliance Protocol: a regulatory benchmark derived from 31 requirements across 15 global financial regulators | **Published research framework.** RCP organizes the requirements into five principles and defines a shared regulatory-action vocabulary. |
+| [**ERC-8319**](https://github.com/ethereum/ERCs/pull/1848) | Standards Track ERC proposal for the RCP vocabulary and legal-effect semantics | **Open proposal under editor review.** The proposal is not merged and its status is separate from Oraclizer product development. |
+| **ERC-TRUST** | A thin candidate extension connecting ERC-8319 semantics to typed execution, authorization, outcomes, and receipts | **Private pre-ERC work.** It has not been submitted as an ERC and remains subject to public review after release. |
+
+## Published research
+
+### Regulatory Compliance Protocol
+
+**Jinwook Kim and Jonghun Hong.** *A Regulatory Compliance Protocol for Asset
+Interoperability Between Traditional and Decentralized Finance in Tokenized
+Capital Markets.*
+
+[arXiv:2603.29278](https://arxiv.org/abs/2603.29278) ·
+[SSRN:6538718](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6538718)
+
+The paper presents RCP as a value-neutral benchmark for identifying which
+regulatory requirements token standards cover, which they leave open, and
+where supporting off-chain infrastructure remains necessary.
+
+### Cross-Domain State Preservation
+
+**Jinwook Kim.** *The Cross-Domain State Preservation Functor: A Mechanized
+Theory of Regulatory State Synchronization in Isabelle/HOL.*
+
+[arXiv:2604.03844](https://arxiv.org/abs/2604.03844) ·
+[SSRN:6550359](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6550359) ·
+[Mechanized artifacts](https://github.com/Oraclizer/formal-verification)
+
+The paper and repository provide mechanized, model-level results under stated
+definitions and assumptions. They do not establish adversarial network
+liveness, implementation refinement, deployed-system correctness, or audit
+status.
+
+More protocol, proof, RWA, and economic research is indexed at
+[research.oraclizer.io](https://research.oraclizer.io).
+
+## Review and contact
+
+Independent reproduction, counterexamples, assumption challenges, and scope
+corrections are especially useful.
+
+- Start with the [formal artifact catalog](https://github.com/Oraclizer/formal-verification#formal-artifact-catalog) and its [assurance boundary](https://github.com/Oraclizer/formal-verification#assurance-boundary).
+- Use the repository's structured issue forms for public proof or documentation questions.
+- Report sensitive vulnerabilities through the relevant repository's [security policy](https://github.com/Oraclizer/formal-verification/security/policy), never through a public issue.
+- Read the [OIP v0.5 specification](https://docs.oraclizer.io/oip-v05/oip-overview/) for protocol semantics and conformance scope.
+- Join the public standards discussion for [ERC-8319](https://ethereum-magicians.org/t/erc-8319-regulatory-compliance-protocol/28917).
+
+General and research inquiries: [jay@oraclizer.io](mailto:jay@oraclizer.io)
