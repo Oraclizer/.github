@@ -1,0 +1,46 @@
+name: Documentation correction
+description: Report a public documentation, link, accessibility, or rendering defect.
+title: "[Docs]: "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve Oraclizer's public documentation. Do not include sensitive security details or private repository content.
+  - type: input
+    id: repository
+    attributes:
+      label: Repository or public page
+      description: Identify the affected repository or URL.
+      placeholder: Oraclizer/.github or https://github.com/Oraclizer
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Exact location
+      description: Provide the file, section, anchor, or rendered element.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Explain what is inaccurate, inaccessible, broken, or unclear.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+      description: Suggest precise replacement text or behavior if possible.
+    validations:
+      required: false
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Public-report confirmation
+      options:
+        - label: This report contains no vulnerability details, credentials, personal data, private links, or confidential material.
+          required: true

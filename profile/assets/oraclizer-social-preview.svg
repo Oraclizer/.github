@@ -1,0 +1,47 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Oraclizer organization profile social preview</title>
+  <desc>Oraclizer wordmark with the statement Formal, protocol, and proving foundations for cross-domain state synchronization and three labeled focus areas.</desc>
+  <defs>
+    <linearGradient id="bg" x1="140" y1="40" x2="1140" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1830"/>
+      <stop offset="1" stop-color="#050A12"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1080 110) rotate(135) scale(540 420)">
+      <stop stop-color="#2473FF" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#2473FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" stroke="#8FB0D8" stroke-opacity="0.055"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="640" rx="36" fill="url(#bg)"/>
+  <rect width="1280" height="640" rx="36" fill="url(#glow)"/>
+  <rect x="1" y="1" width="1278" height="638" rx="35" stroke="#52729A" stroke-opacity="0.26" stroke-width="2"/>
+  <rect width="1280" height="640" rx="36" fill="url(#grid)"/>
+
+  <image href="../oraclizer_logo.svg" x="96" y="86" width="520" height="74"/>
+
+  <text x="96" y="264" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="-1.5">Cross-domain state synchronization</text>
+  <text x="96" y="317" fill="#AFC0D4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="500">Formal, protocol, and proving foundations with explicit assurance boundaries.</text>
+
+  <g transform="translate(96 410)">
+    <rect width="318" height="96" rx="18" fill="#0D203D" stroke="#2E5C99"/>
+    <circle cx="36" cy="32" r="8" fill="#2473FF"/>
+    <text x="58" y="39" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">PROTOCOL</text>
+    <text x="28" y="72" fill="#AFC0D4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">OIP · RCP · ERC-8319</text>
+  </g>
+  <g transform="translate(438 410)">
+    <rect width="318" height="96" rx="18" fill="#10263A" stroke="#2F6A78"/>
+    <circle cx="36" cy="32" r="8" fill="#37B4A5"/>
+    <text x="58" y="39" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">FORMAL</text>
+    <text x="28" y="72" fill="#AFC0D4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">Isabelle/HOL artifacts</text>
+  </g>
+  <g transform="translate(780 410)">
+    <rect width="318" height="96" rx="18" fill="#201A3B" stroke="#6251A4"/>
+    <circle cx="36" cy="32" r="8" fill="#9A7CFF"/>
+    <text x="58" y="39" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">PROVING</text>
+    <text x="28" y="72" fill="#AFC0D4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">StateSync-GKR in development</text>
+  </g>
+
+  <text x="96" y="580" fill="#7792B2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="1.2">ORACLIZER.IO</text>
+</svg>
