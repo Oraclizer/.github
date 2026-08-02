@@ -1,6 +1,6 @@
 <svg width="720" height="1080" viewBox="0 0 720 1080" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Oraclizer system and research map for narrow screens</title>
-  <desc id="desc">A vertically arranged project map showing source systems, the OIP and OSS target architecture, regulatory semantics, and assurance work with current publication and maturity labels.</desc>
+  <desc id="desc">A vertically arranged project map showing off-chain and on-chain systems bidirectionally synchronized through the OIP and OSS target architecture, with regulatory semantics, assurance work, and current publication and maturity labels.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="720" y2="1080" gradientUnits="userSpaceOnUse">
       <stop stop-color="#07111F"/>
@@ -40,14 +40,19 @@
     <text x="406" y="210" fill="#AFC0D4" font-size="14">Token, contract, and</text>
     <text x="406" y="231" fill="#AFC0D4" font-size="14">settlement state</text>
 
-    <path d="M190 256V284H360" stroke="#5B93FF" stroke-width="2"/>
-    <path d="M530 256V284H360" stroke="#5B93FF" stroke-width="2"/>
-    <path d="M360 284V310" stroke="#5B93FF" stroke-width="2" marker-end="url(#arrow)"/>
+    <g aria-label="Bidirectional synchronization between source systems and the oracle state machine">
+      <path d="M190 256V284H280" stroke="#5B93FF" stroke-width="2"/>
+      <path d="M530 256V284H440" stroke="#5B93FF" stroke-width="2"/>
+      <rect x="280" y="268" width="160" height="32" rx="16" fill="#0B1B2E" stroke="#4D7FC7"/>
+      <path d="M298 278H322M318 274L322 278L318 282M322 290H298M302 286L298 290L302 294" stroke="#78A5FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="336" y="289" fill="#AFCBFF" font-size="11" font-weight="700" letter-spacing="1.2">STATE SYNC</text>
+      <path d="M360 300V310" stroke="#5B93FF" stroke-width="2"/>
+    </g>
 
     <rect x="40" y="310" width="640" height="178" rx="20" fill="#10233A" stroke="#4D7FC7" stroke-width="1.5"/>
     <text x="72" y="348" fill="#6FA0FF" font-size="13" font-weight="700" letter-spacing="1.7">TARGET ARCHITECTURE</text>
     <text x="72" y="382" fill="#FFFFFF" font-size="24" font-weight="700">ORACLE STATE MACHINE</text>
-    <text x="72" y="411" fill="#B7C9DD" font-size="15">Protocol-level coordination of state transitions</text>
+    <text x="72" y="411" fill="#B7C9DD" font-size="15">Bidirectional coordination of state transitions</text>
     <rect x="72" y="431" width="168" height="30" rx="15" fill="#193A64"/>
     <text x="156" y="451" text-anchor="middle" fill="#AFCBFF" font-size="12" font-weight="700">OIP v0.5 · PUBLISHED</text>
     <rect x="252" y="431" width="188" height="30" rx="15" fill="#2C2449"/>
