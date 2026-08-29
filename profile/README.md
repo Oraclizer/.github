@@ -56,6 +56,21 @@ The diagram is a project map, not a deployment diagram. Its status labels are
 part of the architecture: public research, published specifications, active
 development, and private candidates are intentionally distinguished.
 
+## Assurance chain
+
+<p align="center">
+  <picture>
+    <source media="(max-width: 640px)" srcset="./assets/org-assurance-chain-mobile.svg">
+    <img src="./assets/org-assurance-chain.svg" alt="Mechanized Isabelle/HOL models feed bounded bridges that carry evidence today, and those bridges pin named implementations; a dashed band states the target of full core refinement from models to runtime, distinguished from the bounded evidence that exists now" width="100%">
+  </picture>
+</p>
+
+The chain reads left to right: machine-checked models, the bounded bridges
+that carry evidence today, and the pinned implementations they are meant to
+land on. The dashed band is the target, full core refinement from models to
+runtime, closed stepwise and published with its evidence; it is a goal
+statement, not a current claim.
+
 ## Repository portfolio
 
 ### Public now

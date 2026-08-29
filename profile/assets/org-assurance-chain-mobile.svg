@@ -1,0 +1,127 @@
+<svg width="720" height="1730" viewBox="0 0 720 1730" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="chainm-title chainm-desc">
+  <title id="chainm-title">Oraclizer assurance chain for narrow screens</title>
+  <desc id="chainm-desc">A vertically stacked assurance chain. Mechanized Isabelle/HOL models feed bounded bridges that carry evidence today, and those bridges pin named implementations. A dashed band at the bottom states the target of full core refinement from models to runtime, kept visually separate from the bounded evidence that exists now.</desc>
+  <defs>
+    <linearGradient id="chainm-bg" x1="0" y1="0" x2="720" y2="1730" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="1" stop-color="#0A1728"/>
+    </linearGradient>
+    <radialGradient id="chainm-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(360 520) rotate(90) scale(660 400)">
+      <stop stop-color="#2473FF" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#2473FF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="chainm-grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" stroke="#6E8AAC" stroke-opacity="0.08"/>
+    </pattern>
+    <marker id="chainm-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M1 1L8 5L1 9" stroke="#5B93FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect width="720" height="1730" rx="26" fill="url(#chainm-bg)"/>
+  <rect width="720" height="1730" rx="26" fill="url(#chainm-grid)"/>
+  <rect width="720" height="1730" rx="26" fill="url(#chainm-glow)"/>
+  <rect x="0.75" y="0.75" width="718.5" height="1728.5" rx="25.25" stroke="#315072" stroke-opacity="0.7" stroke-width="1.5"/>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="40" y="50" fill="#6FA0FF" font-size="13" font-weight="700" letter-spacing="2.2">ORACLIZER ASSURANCE CHAIN</text>
+    <text x="40" y="84" fill="#F4F8FF" font-size="24" font-weight="700">Models, bridges, implementations</text>
+    <text x="40" y="111" fill="#9EB1C8" font-size="14">What each layer proves today, and how much is still open</text>
+
+    <g aria-label="Mechanized models section">
+      <rect x="40" y="148" width="640" height="448" rx="20" fill="#0D1B2D" stroke="#294866"/>
+      <text x="66" y="178" fill="#6FA0FF" font-size="13" font-weight="700" letter-spacing="1.6">MECHANIZED MODELS</text>
+      <text x="66" y="199" fill="#9EB1C8" font-size="13">Isabelle/HOL sessions</text>
+      <path d="M66 211H654" stroke="#294866"/>
+
+      <rect x="66" y="222" width="588" height="58" rx="12" fill="#12263E"/>
+      <text x="82" y="246" fill="#F4F8FF" font-size="15" font-weight="600">Cross-domain state preservation</text>
+      <text x="82" y="265" fill="#AFC0D4" font-size="12">preservation morphisms and degrees</text>
+
+      <rect x="66" y="290" width="588" height="58" rx="12" fill="#12263E"/>
+      <text x="82" y="314" fill="#F4F8FF" font-size="15" font-weight="600">Regulatory action composition</text>
+      <text x="82" y="333" fill="#AFC0D4" font-size="12">outcomes, commutativity, normal forms</text>
+
+      <rect x="66" y="358" width="588" height="58" rx="12" fill="#12263E"/>
+      <text x="82" y="382" fill="#F4F8FF" font-size="15" font-weight="600">Protected-behavior obstructions</text>
+      <text x="82" y="401" fill="#AFC0D4" font-size="12">independent partial companion</text>
+
+      <rect x="66" y="426" width="588" height="58" rx="12" fill="#12263E"/>
+      <text x="82" y="450" fill="#F4F8FF" font-size="15" font-weight="600">GKR protocol soundness</text>
+      <text x="82" y="469" fill="#AFC0D4" font-size="12">layered reduction, derived bound</text>
+
+      <rect x="66" y="494" width="588" height="58" rx="12" fill="#12263E"/>
+      <text x="82" y="518" fill="#F4F8FF" font-size="15" font-weight="600">SMT circuit-compiler correctness</text>
+      <text x="82" y="537" fill="#AFC0D4" font-size="12">both directions, all three operations</text>
+
+      <circle cx="72" cy="574" r="5" fill="#6BE0B6"/>
+      <text x="88" y="579" fill="#8EA6C0" font-size="12">machine-checked, sorry-free sessions</text>
+    </g>
+
+    <path d="M360 602V620" stroke="#5B93FF" stroke-width="2" marker-end="url(#chainm-arrow)"/>
+
+    <g aria-label="Bounded bridges section">
+      <rect x="40" y="628" width="640" height="428" rx="20" fill="#0D1B2D" stroke="#294866"/>
+      <text x="66" y="658" fill="#6FA0FF" font-size="13" font-weight="700" letter-spacing="1.6">BOUNDED BRIDGES</text>
+      <text x="66" y="679" fill="#9EB1C8" font-size="13">Evidence that exists today</text>
+      <path d="M66 691H654" stroke="#294866"/>
+
+      <rect x="66" y="702" width="588" height="64" rx="12" fill="#12263E"/>
+      <text x="82" y="728" fill="#F4F8FF" font-size="15" font-weight="600">Recorded contracts + Creusot replay</text>
+      <text x="82" y="748" fill="#AFC0D4" font-size="12">named Rust functions in five crates</text>
+
+      <rect x="66" y="784" width="588" height="64" rx="12" fill="#12263E"/>
+      <text x="82" y="810" fill="#F4F8FF" font-size="15" font-weight="600">KEVM runtime claims + Certora rules</text>
+      <text x="82" y="830" fill="#AFC0D4" font-size="12">bounded rules, selected bytecode proofs</text>
+
+      <rect x="66" y="866" width="588" height="64" rx="12" fill="#12263E"/>
+      <text x="82" y="892" fill="#F4F8FF" font-size="15" font-weight="600">Deterministic builds</text>
+      <text x="82" y="912" fill="#AFC0D4" font-size="12">frozen source identity, identical hashes</text>
+
+      <rect x="66" y="948" width="588" height="64" rx="12" fill="#12263E"/>
+      <text x="82" y="974" fill="#F4F8FF" font-size="15" font-weight="600">External proof receipt</text>
+      <text x="82" y="994" fill="#AFC0D4" font-size="12">recorded on a public verification chain</text>
+
+      <circle cx="72" cy="1034" r="5" fill="#FFD27A"/>
+      <text x="88" y="1039" fill="#8EA6C0" font-size="12">each bridge states its exact scope</text>
+    </g>
+
+    <path d="M360 1062V1080" stroke="#5B93FF" stroke-width="2" marker-end="url(#chainm-arrow)"/>
+
+    <g aria-label="Pinned implementations section">
+      <rect x="40" y="1088" width="640" height="432" rx="20" fill="#0D1B2D" stroke="#294866"/>
+      <text x="66" y="1118" fill="#6FA0FF" font-size="13" font-weight="700" letter-spacing="1.6">PINNED IMPLEMENTATIONS</text>
+      <text x="66" y="1139" fill="#9EB1C8" font-size="13">Where the models are meant to land</text>
+      <path d="M66 1151H654" stroke="#294866"/>
+
+      <rect x="66" y="1162" width="588" height="90" rx="12" fill="#12263E"/>
+      <text x="82" y="1190" fill="#F4F8FF" font-size="16" font-weight="700">StateSync-GKR prover</text>
+      <rect x="82" y="1202" width="52" height="22" rx="11" fill="#193A64"/>
+      <text x="108" y="1217" text-anchor="middle" fill="#AFCBFF" font-size="10" font-weight="700">RUST</text>
+      <text x="82" y="1240" fill="#AFC0D4" font-size="12">prover and verification crates</text>
+
+      <rect x="66" y="1274" width="588" height="90" rx="12" fill="#12263E"/>
+      <text x="82" y="1302" fill="#F4F8FF" font-size="16" font-weight="700">ERC-TRUST reference</text>
+      <rect x="82" y="1314" width="74" height="22" rx="11" fill="#193A64"/>
+      <text x="119" y="1329" text-anchor="middle" fill="#AFCBFF" font-size="10" font-weight="700">SOLIDITY</text>
+      <text x="82" y="1352" fill="#AFC0D4" font-size="12">reference implementation under review</text>
+
+      <rect x="66" y="1386" width="588" height="90" rx="12" fill="#12263E"/>
+      <text x="82" y="1414" fill="#F4F8FF" font-size="16" font-weight="700">Settlement EVM reference</text>
+      <rect x="82" y="1426" width="70" height="22" rx="11" fill="#193A64"/>
+      <text x="117" y="1441" text-anchor="middle" fill="#AFCBFF" font-size="10" font-weight="700">FOUNDRY</text>
+      <text x="82" y="1464" fill="#AFC0D4" font-size="12">reference design on draft branches</text>
+
+      <circle cx="72" cy="1498" r="5" fill="#6FA0FF"/>
+      <text x="88" y="1503" fill="#8EA6C0" font-size="12">each repository pins its own toolchain</text>
+    </g>
+
+    <rect x="40" y="1550" width="640" height="140" rx="16" fill="#0A1626" stroke="#FFD27A" stroke-width="1.6" stroke-dasharray="9 7"/>
+    <circle cx="64" cy="1580" r="6" fill="#FFD27A"/>
+    <text x="84" y="1585" fill="#FFD27A" font-size="13" font-weight="700" letter-spacing="1.6">TARGET</text>
+    <text x="84" y="1612" fill="#D9E5F3" font-size="15">Full core refinement, models to runtime, closed stepwise</text>
+    <text x="84" y="1634" fill="#D9E5F3" font-size="15">and published with its evidence.</text>
+    <text x="84" y="1658" fill="#8FA5BE" font-size="12">The bridges above are bounded today and each states its own scope.</text>
+    <text x="84" y="1676" fill="#8FA5BE" font-size="12">This band is the goal, not a current claim.</text>
+  </g>
+</svg>
