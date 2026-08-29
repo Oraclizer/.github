@@ -27,11 +27,8 @@ regulatory boundaries.
 </div>
 
 > [!IMPORTANT]
-> Oraclizer's public GitHub currently provides research, formal artifacts, and
-> protocol specifications. A public repository, a green proof build, or a
-> published preprint does not by itself establish a production deployment, an
-> audit, legal compliance, operational security, or model-to-code refinement.
-> Each repository defines its exact assurance boundary.
+> Oraclizer's public GitHub provides research, formal artifacts, and protocol
+> specifications. Each repository defines its exact assurance boundary.
 
 ## Why state synchronization
 
@@ -65,7 +62,7 @@ development, and private candidates are intentionally distinguished.
 
 | Repository | Scope | Current status |
 | --- | --- | --- |
-| [**formal-verification**](https://github.com/Oraclizer/formal-verification) | Machine-checked, model-level foundations for cross-domain state preservation and regulatory action composition in Isabelle/HOL | **Public, production-maintained research.** Reproducible sessions, integrity manifests, explicit assumptions, security reporting, contribution rules, governance, and citation metadata. It is not a production implementation or deployment. |
+| [**formal-verification**](https://github.com/Oraclizer/formal-verification) | Machine-checked, model-level foundations for cross-domain state preservation and regulatory action composition in Isabelle/HOL, plus an independent protected-behavior obstruction companion | **Public, production-maintained research.** Reproducible sessions, integrity manifests, explicit assumptions, security reporting, contribution rules, governance, and citation metadata. It is not a production implementation or deployment. |
 
 ### Preparing for public release
 
@@ -75,8 +72,8 @@ status, or production readiness, and no private repository link is exposed.
 
 | Repository | Scope | Publication boundary |
 | --- | --- | --- |
-| **ERC-TRUST** | *Typed Regulatory Uniformity for Security Tokens*: typed, fail-closed regulatory actions and recomputable receipts for security-token implementations | **Private pre-ERC candidate.** Public release is planned after repository-readiness and disclosure gates. Unaudited and not for production. No release date is announced. |
-| **StateSync-GKR** | A GKR prover stack specialized for sparse-Merkle-tree state verification and built on Plonky3 primitives | **Private development repository.** Public release is planned after evidence, repository hygiene, and security gates. No release date is announced. |
+| **ERC-TRUST** | *Typed Regulatory Uniformity for Security Tokens*: typed, fail-closed regulatory actions and recomputable receipts for security-token implementations | **Private pre-ERC candidate.** Public release is planned after internal review. Unaudited and not for production. |
+| **StateSync-GKR** | A Rust prover for sparse-Merkle state transitions built on Plonky3 primitives, with GKR and sumcheck mechanized in Isabelle/HOL | **Private development repository.** Public release is planned after internal review. |
 
 Public visibility will be evaluated independently from a version tag, release,
 deployment, audit, or standards-process milestone.
