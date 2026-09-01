@@ -78,6 +78,7 @@ statement, not a current claim.
 | Repository | Scope | Current status |
 | --- | --- | --- |
 | [**formal-verification**](https://github.com/Oraclizer/formal-verification) | Machine-checked, model-level foundations for cross-domain state preservation and regulatory action composition in Isabelle/HOL, plus an independent protected-behavior obstruction companion | **Public, production-maintained research.** Reproducible sessions, integrity manifests, explicit assumptions, security reporting, contribution rules, governance, and citation metadata. It is not a production implementation or deployment. |
+| [**erc-trust**](https://github.com/Oraclizer/erc-trust) | ERC-TRUST, *Typed Regulatory Uniformity for Security Tokens*: typed, fail-closed regulatory actions and recomputable receipts for security tokens, with the proposed ERC text, a reference implementation, an SDK, and machine-checked verification evidence | **Public pre-ERC candidate.** Tagged candidate snapshots, reproducible verification evidence, structured issue forms, security reporting, and citation metadata, with the companion paper at [arXiv:2608.29134](https://arxiv.org/abs/2608.29134). Unaudited and not for production. |
 
 ### Preparing for public release
 
@@ -87,7 +88,6 @@ status, or production readiness, and no private repository link is exposed.
 
 | Repository | Scope | Publication boundary |
 | --- | --- | --- |
-| **ERC-TRUST** | *Typed Regulatory Uniformity for Security Tokens*: typed, fail-closed regulatory actions and recomputable receipts for security-token implementations | **Private pre-ERC candidate.** Public release is planned after internal review. Unaudited and not for production. |
 | **StateSync-GKR** | A Rust prover for sparse-Merkle state transitions built on Plonky3 primitives, with GKR and sumcheck mechanized in Isabelle/HOL | **Private development repository.** Public release is planned after internal review. |
 
 Public visibility will be evaluated independently from a version tag, release,
@@ -100,7 +100,7 @@ deployment, audit, or standards-process milestone.
 | [**OIP v0.5**](https://docs.oraclizer.io/oip-v05/oip-overview/) | Oracle Interoperability Protocol: message semantics, state transitions, routing, validation, errors, and conformance rules for state-machine implementations | **Published specification, prototype stage.** OIP is a specification; OSS is its reference implementation track. |
 | [**RCP**](https://arxiv.org/abs/2603.29278) | Regulatory Compliance Protocol: a regulatory benchmark derived from 31 requirements across 15 global financial regulators | **Published research framework.** RCP organizes the requirements into five principles and defines a shared regulatory-action vocabulary. |
 | [**ERC-8319**](https://github.com/ethereum/ERCs/pull/1848) | Standards Track ERC proposal for the RCP vocabulary and legal-effect semantics | **Open proposal under editor review.** The proposal is not merged and its status is separate from Oraclizer product development. |
-| **ERC-TRUST** | A thin candidate extension connecting ERC-8319 semantics to typed execution, authorization, outcomes, and receipts | **Private pre-ERC work.** It has not been submitted as an ERC and remains subject to public review after release. |
+| [**ERC-TRUST**](https://github.com/Oraclizer/erc-trust) | A thin candidate extension connecting ERC-8319 semantics to typed execution, authorization, outcomes, and receipts | **Public pre-ERC candidate.** The proposed text, reference implementation, and verification evidence are public. It has not been submitted as an ERC, and the official submission follows ERC-8319. |
 
 ## Published research
 
@@ -131,6 +131,21 @@ definitions and assumptions. They do not establish adversarial network
 liveness, implementation refinement, deployed-system correctness, or audit
 status.
 
+### Mechanizing Typed Regulatory Actions
+
+**Jinwook Kim.** *Mechanizing Typed Regulatory Actions for Security Tokens:
+Semantics, Falsification, and Bounded EVM Evidence.*
+
+[arXiv:2608.29134](https://arxiv.org/abs/2608.29134) ·
+[Artifact repository](https://github.com/Oraclizer/erc-trust)
+
+The paper mechanizes execution semantics for typed regulatory actions on
+security tokens in Isabelle/HOL, keeps applied, refused, and failed outcomes
+apart, and proves an observational limit of the contract-level model. For one
+implementation candidate it reports bounded, tool-by-tool evidence with the
+reach of each result stated separately. It does not establish audit status,
+production readiness, or deployed-system correctness.
+
 More protocol, proof, RWA, and economic research is indexed at
 [research.oraclizer.io](https://research.oraclizer.io).
 
@@ -140,6 +155,7 @@ Independent reproduction, counterexamples, assumption challenges, and scope
 corrections are especially useful.
 
 - Start with the [formal artifact catalog](https://github.com/Oraclizer/formal-verification#formal-artifact-catalog) and its [assurance boundary](https://github.com/Oraclizer/formal-verification#assurance-boundary).
+- Review the [ERC-TRUST candidate repository](https://github.com/Oraclizer/erc-trust) for typed regulatory-action execution, its evidence package, and its issue forms.
 - Use the repository's structured issue forms for public proof or documentation questions.
 - Report sensitive vulnerabilities through the relevant repository's [security policy](https://github.com/Oraclizer/formal-verification/security/policy), never through a public issue.
 - Read the [OIP v0.5 specification](https://docs.oraclizer.io/oip-v05/oip-overview/) for protocol semantics and conformance scope.

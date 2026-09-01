@@ -87,9 +87,9 @@
 
       <rect x="92" y="528" width="454" height="56" rx="12" fill="#12263E"/>
       <text x="112" y="553" fill="#FFFFFF" font-size="16" font-weight="700">ERC-TRUST</text>
-      <text x="112" y="573" fill="#AFC0D4" font-size="13">Private pre-ERC candidate · public release planned</text>
-      <rect x="420" y="542" width="106" height="24" rx="12" fill="#4A3617"/>
-      <text x="473" y="559" text-anchor="middle" fill="#FFD27A" font-size="11" font-weight="700">PRIVATE</text>
+      <text x="112" y="573" fill="#AFC0D4" font-size="13">Public pre-ERC candidate · unaudited, not for production</text>
+      <rect x="428" y="542" width="98" height="24" rx="12" fill="#173D35"/>
+      <text x="477" y="559" text-anchor="middle" fill="#6BE0B6" font-size="11" font-weight="700">PUBLIC</text>
 
       <rect x="626" y="374" width="510" height="230" rx="20" fill="#0D1B2D" stroke="#294866"/>
       <text x="654" y="410" fill="#F4F8FF" font-size="21" font-weight="700">ASSURANCE</text>
