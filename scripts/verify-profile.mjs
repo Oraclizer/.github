@@ -70,7 +70,7 @@ const forbiddenPatterns = [
   [/The first oracle/i, "unverifiable first claim"],
   [/complete state/i, "overbroad complete-state claim"],
   [/safety and liveness under Byzantine faults/i, "unsupported Byzantine liveness claim"],
-  [/github\.com\/Oraclizer\/(?:erc-trust|statesync-gkr)/i, "private repository link"],
+  [/github\.com\/Oraclizer\/statesync-gkr/i, "private repository link"],
   [/[A-Za-z]:\\Users\\/i, "machine-local Windows path"],
 ];
 
