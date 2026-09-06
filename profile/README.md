@@ -47,7 +47,7 @@ semantics, mechanized models, and proving infrastructure.
 
 <p align="center">
   <picture>
-    <source media="(max-width: 640px)" srcset="./assets/oraclizer-system-map-mobile.svg">
+    <source media="(max-width: 900px)" srcset="./assets/oraclizer-system-map-mobile.svg">
     <img src="./assets/oraclizer-system-map.svg" alt="Oraclizer system and research map showing on-chain and off-chain systems connected through the OIP and OSS target architecture, with regulatory semantics and assurance layers" width="100%">
   </picture>
 </p>
@@ -60,7 +60,7 @@ development, and private candidates are intentionally distinguished.
 
 <p align="center">
   <picture>
-    <source media="(max-width: 640px)" srcset="./assets/org-assurance-chain-mobile.svg">
+    <source media="(max-width: 900px)" srcset="./assets/org-assurance-chain-mobile.svg">
     <img src="./assets/org-assurance-chain.svg" alt="Mechanized Isabelle/HOL models feed bounded bridges that carry evidence today, and those bridges pin named implementations; a dashed band states the target of full core refinement from models to runtime, distinguished from the bounded evidence that exists now" width="100%">
   </picture>
 </p>
