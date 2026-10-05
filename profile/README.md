@@ -100,7 +100,7 @@ deployment, audit, or standards-process milestone.
 | [**OIP v0.5**](https://docs.oraclizer.io/oip-v05/oip-overview/) | Oracle Interoperability Protocol: message semantics, state transitions, routing, validation, errors, and conformance rules for state-machine implementations | **Published specification, prototype stage.** OIP is a specification; OSS is its reference implementation track. |
 | [**RCP**](https://arxiv.org/abs/2603.29278) | Regulatory Compliance Protocol: a regulatory benchmark derived from 31 requirements across 15 global financial regulators | **Published research framework.** RCP organizes the requirements into five principles and defines a shared regulatory-action vocabulary. |
 | [**ERC-8319**](https://github.com/ethereum/ERCs/pull/1848) | Standards Track ERC proposal for the RCP vocabulary and legal-effect semantics | **Open proposal under editor review.** The proposal is not merged and its status is separate from Oraclizer product development. |
-| [**ERC-TRUST**](https://github.com/Oraclizer/erc-trust) | A thin candidate extension connecting ERC-8319 semantics to typed execution, authorization, outcomes, and receipts | **Public pre-ERC candidate.** The proposed text, reference implementation, and verification evidence are public. It has not been submitted as an ERC, and the official submission follows ERC-8319. |
+| [**ERC-TRUST**](https://github.com/Oraclizer/erc-trust) | A thin candidate extension connecting ERC-8319 semantics to typed execution, authorization, outcomes, and receipts | **Public pre-ERC candidate.** The proposed text, reference implementation, and verification evidence are public. It has not been submitted as an ERC. |
 
 ## Published research
 
