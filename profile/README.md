@@ -16,6 +16,7 @@ regulatory boundaries.
 [**Research**](https://research.oraclizer.io) ·
 [**Documentation**](https://docs.oraclizer.io) ·
 [**Formal artifacts**](https://github.com/Oraclizer/formal-verification) ·
+[**Prover**](https://github.com/Oraclizer/statesync-gkr) ·
 [**X**](https://x.com/Oraclizer)
 
 [System map](#system-and-research-map) ·
@@ -27,8 +28,9 @@ regulatory boundaries.
 </div>
 
 > [!IMPORTANT]
-> Oraclizer's public GitHub provides research, formal artifacts, and protocol
-> specifications. Each repository defines its exact assurance boundary.
+> Oraclizer's public GitHub provides research, formal artifacts, protocol
+> specifications, and source-available software. Each repository defines its
+> exact assurance boundary.
 
 ## Why state synchronization
 
@@ -53,8 +55,8 @@ semantics, mechanized models, and proving infrastructure.
 </p>
 
 The diagram is a project map, not a deployment diagram. Its status labels are
-part of the architecture: public research, published specifications, active
-development, and private candidates are intentionally distinguished.
+part of the architecture: public research, published specifications, and
+active development are intentionally distinguished.
 
 ## Assurance chain
 
@@ -79,19 +81,7 @@ statement, not a current claim.
 | --- | --- | --- |
 | [**formal-verification**](https://github.com/Oraclizer/formal-verification) | Machine-checked, model-level foundations for cross-domain state preservation and regulatory action composition in Isabelle/HOL, plus an independent protected-behavior obstruction companion | **Public, production-maintained research.** Reproducible sessions, integrity manifests, explicit assumptions, security reporting, contribution rules, governance, and citation metadata. It is not a production implementation or deployment. |
 | [**erc-trust**](https://github.com/Oraclizer/erc-trust) | ERC-TRUST, *Typed Regulatory Uniformity for Security Tokens*: typed, fail-closed regulatory actions and recomputable receipts for security tokens, with the proposed ERC text, a reference implementation, an SDK, and machine-checked verification evidence | **Public pre-ERC candidate.** Tagged candidate snapshots, reproducible verification evidence, structured issue forms, security reporting, and citation metadata, with the companion paper at [arXiv:2608.29134](https://arxiv.org/abs/2608.29134). Unaudited and not for production. |
-
-### Preparing for public release
-
-The repositories below remain private today. These entries announce intended
-future publication. They do not announce availability, a delivery date, audit
-status, or production readiness, and no private repository link is exposed.
-
-| Repository | Scope | Publication boundary |
-| --- | --- | --- |
-| **StateSync-GKR** | A Rust prover for sparse-Merkle state transitions built on Plonky3 primitives, with GKR and sumcheck mechanized in Isabelle/HOL | **Private development repository.** Public release is planned after internal review. |
-
-Public visibility will be evaluated independently from a version tag, release,
-deployment, audit, or standards-process milestone.
+| [**statesync-gkr**](https://github.com/Oraclizer/statesync-gkr) | StateSync-GKR: a Rust GKR and sumcheck engine for sparse-Merkle state transitions, with its circuit compiler and its GKR and sumcheck protocol modeled and machine-checked in Isabelle/HOL, and a conditional forward theorem relating the model to the verifier's acceptance checks | **Public, source-available under the Business Source License 1.1 (v1.1.1).** Signed immutable release, reproducible source checks, a software DOI, and the companion paper at [arXiv:2610.05335](https://arxiv.org/abs/2610.05335). Research and other non-production use are free; production proving requires a commercial license. |
 
 ## Protocols and standards
 
@@ -146,6 +136,23 @@ implementation candidate it reports bounded, tool-by-tool evidence with the
 reach of each result stated separately. It does not establish audit status,
 production readiness, or deployed-system correctness.
 
+### StateSync-GKR
+
+**Jinwook Kim.** *StateSync-GKR: Machine-Checking the Trust Chain from
+Sparse-Merkle State Transitions to GKR Verification.*
+
+[arXiv:2610.05335](https://arxiv.org/abs/2610.05335) ·
+[Software DOI](https://doi.org/10.5281/zenodo.23280552) ·
+[Repository](https://github.com/Oraclizer/statesync-gkr)
+
+The paper machine-checks, in Isabelle/HOL, the sparse-Merkle semantics, a
+model of the circuit compiler, the GKR and sumcheck reduction, and their
+composition, including the exact degree-four KoalaBear extension field that
+the implementation uses. A conditional forward acceptance theorem and
+recorded proofs for selected Rust contracts relate the model to the shipped
+verifier. The exact statements and premises are documented in the
+repository's formal-verification guide.
+
 More protocol, proof, RWA, and economic research is indexed at
 [research.oraclizer.io](https://research.oraclizer.io).
 
@@ -156,6 +163,7 @@ corrections are especially useful.
 
 - Start with the [formal artifact catalog](https://github.com/Oraclizer/formal-verification#formal-artifact-catalog) and its [assurance boundary](https://github.com/Oraclizer/formal-verification#assurance-boundary).
 - Review the [ERC-TRUST candidate repository](https://github.com/Oraclizer/erc-trust) for typed regulatory-action execution, its evidence package, and its issue forms.
+- Review the [StateSync-GKR repository](https://github.com/Oraclizer/statesync-gkr) for the prover, its [formal-verification guide](https://github.com/Oraclizer/statesync-gkr/blob/main/FORMAL_VERIFICATION.md), and its reproduction steps.
 - Use the repository's structured issue forms for public proof or documentation questions.
 - Report sensitive vulnerabilities through the relevant repository's [security policy](https://github.com/Oraclizer/formal-verification/security/policy), never through a public issue.
 - Read the [OIP v0.5 specification](https://docs.oraclizer.io/oip-v05/oip-overview/) for protocol semantics and conformance scope.

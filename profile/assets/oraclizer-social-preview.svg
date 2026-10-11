@@ -40,7 +40,7 @@
     <rect width="318" height="96" rx="18" fill="#201A3B" stroke="#6251A4"/>
     <circle cx="36" cy="32" r="8" fill="#9A7CFF"/>
     <text x="58" y="39" fill="#FFFFFF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">PROVING</text>
-    <text x="28" y="72" fill="#AFC0D4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">StateSync-GKR in development</text>
+    <text x="28" y="72" fill="#AFC0D4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">StateSync-GKR</text>
   </g>
 
   <text x="96" y="580" fill="#7792B2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="1.2">ORACLIZER.IO</text>
