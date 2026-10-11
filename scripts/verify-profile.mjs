@@ -53,7 +53,7 @@ const requiredProfileText = [
   "Formal, protocol, and proving foundations for cross-domain state synchronization",
   "System and research map",
   "Repository portfolio",
-  "Preparing for public release",
+  "Public now",
   "Protocols and standards",
   "Published research",
   "Review and contact",
@@ -70,7 +70,6 @@ const forbiddenPatterns = [
   [/The first oracle/i, "unverifiable first claim"],
   [/complete state/i, "overbroad complete-state claim"],
   [/safety and liveness under Byzantine faults/i, "unsupported Byzantine liveness claim"],
-  [/github\.com\/Oraclizer\/statesync-gkr/i, "private repository link"],
   [/[A-Za-z]:\\Users\\/i, "machine-local Windows path"],
 ];
 
