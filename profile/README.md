@@ -81,7 +81,7 @@ statement, not a current claim.
 | --- | --- | --- |
 | [**formal-verification**](https://github.com/Oraclizer/formal-verification) | Machine-checked, model-level foundations for cross-domain state preservation and regulatory action composition in Isabelle/HOL, plus an independent protected-behavior obstruction companion | **Public, production-maintained research.** Reproducible sessions, integrity manifests, explicit assumptions, security reporting, contribution rules, governance, and citation metadata. It is not a production implementation or deployment. |
 | [**erc-trust**](https://github.com/Oraclizer/erc-trust) | ERC-TRUST, *Typed Regulatory Uniformity for Security Tokens*: typed, fail-closed regulatory actions and recomputable receipts for security tokens, with the proposed ERC text, a reference implementation, an SDK, and machine-checked verification evidence | **Public pre-ERC candidate.** Tagged candidate snapshots, reproducible verification evidence, structured issue forms, security reporting, and citation metadata, with the companion paper at [arXiv:2608.29134](https://arxiv.org/abs/2608.29134). Unaudited and not for production. |
-| [**statesync-gkr**](https://github.com/Oraclizer/statesync-gkr) | StateSync-GKR: a Rust GKR and sumcheck engine for sparse-Merkle state transitions, with its circuit compiler and its GKR and sumcheck protocol modeled and machine-checked in Isabelle/HOL, and a conditional forward theorem relating the model to the verifier's acceptance checks | **Public, source-available under the Business Source License 1.1 (v1.1.1).** Signed immutable release, reproducible source checks, a software DOI, and the companion paper at [arXiv:2610.05335](https://arxiv.org/abs/2610.05335). Research and other non-production use are free; production proving requires a commercial license. |
+| [**statesync-gkr**](https://github.com/Oraclizer/statesync-gkr) | StateSync-GKR: a Rust GKR and sumcheck engine for sparse-Merkle state transitions, with its circuit compiler and its GKR and sumcheck protocol modeled and machine-checked in Isabelle/HOL, and a conditional forward theorem relating the model to the verifier's acceptance checks | **Public, source-available under the Business Source License 1.1 (v1.1.1).** Signed immutable release, reproducible source checks, a software DOI, the [engine design and evaluation paper](https://arxiv.org/abs/2610.14849), and the [formal verification paper](https://arxiv.org/abs/2610.05335). Research and other non-production use are free; production proving requires a commercial license. |
 
 ## Protocols and standards
 
@@ -136,7 +136,21 @@ implementation candidate it reports bounded, tool-by-tool evidence with the
 reach of each result stated separately. It does not establish audit status,
 production readiness, or deployed-system correctness.
 
-### StateSync-GKR
+### StateSync-GKR engine design and evaluation
+
+**Jinwook Kim.** *StateSync-GKR: Design and Evaluation of a Reusable Sparse
+GKR Engine.*
+
+[arXiv:2610.14849](https://arxiv.org/abs/2610.14849) ·
+[Measured profiles](https://github.com/Oraclizer/statesync-gkr/blob/main/docs/performance.md) ·
+[Repository](https://github.com/Oraclizer/statesync-gkr)
+
+The paper connects a reusable Rust sumcheck/GKR core and its sparse-Merkle
+frontend to controlled memory, repeated-request and full-proof delivery
+measurements. It separates allocation from process memory, local computation
+from serving capacity, and each result from its comparison conditions.
+
+### StateSync-GKR formal verification
 
 **Jinwook Kim.** *StateSync-GKR: Machine-Checking the Trust Chain from
 Sparse-Merkle State Transitions to GKR Verification.*
