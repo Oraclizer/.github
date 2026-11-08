@@ -182,7 +182,7 @@ corrections are especially useful.
 - Review the [StateSync-GKR repository](https://github.com/Oraclizer/statesync-gkr) for the prover, its [formal-verification guide](https://github.com/Oraclizer/statesync-gkr/blob/main/FORMAL_VERIFICATION.md), and its reproduction steps.
 - Use the repository's structured issue forms for public proof or documentation questions.
 - Report sensitive vulnerabilities through the relevant repository's [security policy](https://github.com/Oraclizer/formal-verification/security/policy), never through a public issue.
-- Read the [OIP v0.5 specification](https://docs.oraclizer.io/oip-v05/oip-overview/) for protocol semantics and conformance scope.
+- Read the [OIP v0.6 specification](https://docs.oraclizer.io/oip-v06/oip-overview/) for protocol semantics and conformance scope.
 - Join the public standards discussion for [ERC-8319](https://ethereum-magicians.org/t/erc-8319-regulatory-compliance-protocol/28917).
 
 General and research inquiries: [jay@oraclizer.io](mailto:jay@oraclizer.io)
