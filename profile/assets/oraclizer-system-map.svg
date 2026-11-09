@@ -64,7 +64,7 @@
       <text x="454" y="210" fill="#FFFFFF" font-size="23" font-weight="700">ORACLE STATE MACHINE</text>
       <text x="454" y="237" fill="#B7C9DD" font-size="15">Bidirectional coordination of state transitions</text>
       <rect x="454" y="255" width="132" height="28" rx="14" fill="#193A64"/>
-      <text x="520" y="274" text-anchor="middle" fill="#AFCBFF" font-size="12" font-weight="700">OIP v0.5 · PUBLISHED</text>
+      <text x="520" y="274" text-anchor="middle" fill="#AFCBFF" font-size="12" font-weight="700">OIP v0.6 · PUBLISHED</text>
       <rect x="596" y="255" width="150" height="28" rx="14" fill="#2C2449"/>
       <text x="671" y="274" text-anchor="middle" fill="#D8CAFF" font-size="12" font-weight="700">OSS · IN DEVELOPMENT</text>
       <text x="454" y="302" fill="#72A2FF" font-size="13" font-weight="600" letter-spacing="1.1">BIND  →  VERIFY  →  COMMIT</text>
