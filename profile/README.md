@@ -154,20 +154,26 @@ from serving capacity, and each result from its comparison conditions.
 
 ### StateSync-GKR formal verification
 
-**Jinwook Kim.** *StateSync-GKR: Machine-Checking the Trust Chain from
-Sparse-Merkle State Transitions to GKR Verification.*
+**Jinwook Kim.** *Soundness of the GKR Protocol for Sparse-Merkle Updates,
+with a Machine-Checked Core.*
 
 [arXiv:2610.05335](https://arxiv.org/abs/2610.05335) ·
 [Software DOI](https://doi.org/10.5281/zenodo.23280552) ·
 [Repository](https://github.com/Oraclizer/statesync-gkr)
 
-The paper machine-checks, in Isabelle/HOL, the sparse-Merkle semantics, a
-model of the circuit compiler, the GKR and sumcheck reduction, and their
-composition, including the exact degree-four KoalaBear extension field that
-the implementation uses. A conditional forward acceptance theorem and
-recorded proofs for selected Rust contracts relate the model to the shipped
-verifier. The exact statements and premises are documented in the
-repository's formal-verification guide.
+The paper proves per-input soundness for membership, non-membership and
+update claims on sparse Merkle trees of every depth, covering cube gates for
+the Poseidon2 S-box and challenges from KoalaBear's quartic extension.
+Isabelle/HOL also checks a layer-chain bound, the exactness of the verifier's
+checks on encoded witnesses in a constraint-level model and, over one field,
+their composition for claims with no valid witness. In the repository, a
+conditional, mechanized forward acceptance theorem and recorded proofs for
+selected Rust contracts relate the model to the shipped verifier; its
+formal-verification guide states the exact premises.
+
+Both StateSync-GKR papers are presented as one argument in the Ethereum
+Research post
+[GKR with a Machine-Checked Core, and a Sparse Prover Made Faster with Byte-Identical Proofs](https://ethresear.ch/t/gkr-with-a-machine-checked-core-and-a-sparse-prover-made-faster-with-byte-identical-proofs/26226).
 
 More protocol, proof, RWA, and economic research is indexed at
 [research.oraclizer.io](https://research.oraclizer.io).
