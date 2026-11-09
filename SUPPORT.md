@@ -11,7 +11,7 @@ recovery, incident response, legal advice, or a response-time agreement.
 | --- | --- |
 | Organization profile or public-link defect | Issue form in `Oraclizer/.github` |
 | Repository-specific bug, proof, or documentation question | The affected repository's issue forms and `CONTRIBUTING.md` |
-| Protocol semantics and conformance scope | [OIP documentation](https://docs.oraclizer.io/oip-v05/oip-overview/) |
+| Protocol semantics and conformance scope | [OIP documentation](https://docs.oraclizer.io/oip-v06/oip-overview/) |
 | Research paper or artifact | [Research index](https://research.oraclizer.io) and the linked repository |
 | Sensitive vulnerability | Private path in the affected repository's `SECURITY.md` |
 | General or research inquiry | `jay@oraclizer.io` |
